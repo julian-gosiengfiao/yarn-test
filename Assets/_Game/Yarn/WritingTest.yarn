@@ -1,0 +1,135 @@
+title: Start
+position: -222,-468
+---
+
+>> ...Busy, bright Peeps who live on my back.
+>> We have arrived at the source of the lost song.
+>> Yes.
+>> There is another of my kind here.
+>> They are Kewa.
+
+<<jump OpeningChoice>>
+
+===
+
+title: OpeningChoice
+position: -219,-274
+---
+
+-> Hurray, a new friend! <<if !visited("Hurray")>>
+    <<jump Hurray>>
+-> I thought Kewa was your name? <<if !visited("YourName")>>
+    <<jump YourName>>
+-> Uh, they don't look like they eat Peeps, do they? <<if !visited("EatPeeps")>>
+    <<jump EatPeeps>>
+
+
+===
+
+title: Hurray
+position: 77,-66
+---
+
+>> ...Friend?
+>> Yes, that word is something they could be.
+>> But we do not know yet.
+<<jump OpeningChoice>>
+
+===
+
+title: YourName
+position: -530,-71
+---
+
+>> Yes. And no.
+>> I am Kewa. They are Kewa.
+>> We are the songs we sing and the paths we take.
+>> We have taken the same path.
+>> Though changed by our own journeys and travels, we sing the same song.
+>> We are Kewa.
+
+<<jump OpeningChoice>>
+
+
+===
+
+title: EatPeeps
+position: -215,-70
+---
+
+>> ...Hmmmmm.
+
+-> That's not a reassuring answer!
+    >> Apologies, Peeps - I did not mean to alarm you.
+    <<jump Afraid>>
+-> ...I was really hoping this would be an easy question.
+    >> ...
+    <<jump Afraid>>
+
+===
+
+title: Afraid
+position: -211,129
+---
+
+>> They are afraid.
+>> Scared.
+>> They know you, Peeps.
+
+-> But we've never encountered another Space Whale!
+    >> Just so.
+    <<jump KewaNotKewa>>
+-> How is that possible?
+    <<jump KewaNotKewa>>
+
+===
+
+title: KewaNotKewa
+position: -210,324
+---
+
+<<if !visited("YourName")>>
+>> Allow me to explain.
+>> Just I am Kewa. They too, are Kewa.
+>> We are the songs we sing and the paths we take.
+>> We have taken the same path.
+>> Though changed by our own journeys and travels, we sing the same song.
+>> We are Kewa.
+-> Okay, but what does that have to do with Peeps?
+>> Just as you have met me, Kewa. But not met this Kewa before.
+>> My kin's journey has taken them to meet Peeps.
+>> Those who walk a path like you. But not like you.
+<<else>>
+>> ...Like you have met Kewa. But not met this Kewa.
+>> My kin's journey has taken them to meet Peeps.
+>> Those who walk a path like you. But not like you.
+<<endif>>
+-> What do you mean?
+    >> Your kin roam the stars.
+    <<jump LikeYou>>
+-> So there are other surviving Peeps!
+    >> Yes.
+    <<jump LikeYou>>
+
+===
+
+title: LikeYou
+position: -210,512
+---
+
+>> Like you, they sing a song of loss, bravery, and a search for home.
+-> That sounds just like us!
+>> And of destruction.
+-> That does not sound like us.
+>> ...
+>> ...I have reassured them that you do not sing the same song.
+>> Yes.
+>> They know, for my song has already been changed by the song you sing.
+>> As has yours.
+>> ...They warn us both to stay far away from these Peeps who are like you - and yet not.
+
+-> Yeah, those guys sound terrible.
+-> We can't just ignore the only other survivors of our race.
+-> We need to think about this.
+
+===
