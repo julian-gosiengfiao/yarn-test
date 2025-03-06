@@ -106,6 +106,7 @@ position: -210,324
 <<endif>>
 -> What do you mean?
     >> Your kin roam the stars.
+    >> They are alive.
     <<jump LikeYou>>
 -> So there are other surviving Peeps!
     >> Yes.
@@ -129,7 +130,10 @@ position: -210,512
 >> ...They warn us both to stay far away from these Peeps who are like you - and yet not.
 
 -> Yeah, those guys sound terrible.
+    SCENE END
 -> We can't just ignore the only other survivors of our race.
+    SCENE END
 -> We need to think about this.
+    SCENE END
 
 ===
